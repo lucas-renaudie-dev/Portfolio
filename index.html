@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Lucas Renaudie | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Optionally include Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+            rel="stylesheet"
+    />
+</head>
+<body>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-container">
+        <div class="nav-logo">Lucas Renaudie</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content container">
+        <h1>Hello, I'm Lucas!</h1>
+        <p>
+            Welcome to my portfolio. Below, you’ll find a selection of my projects,
+            all inspired by real-world academic and self-taught experiences.
+        </p>
+        <a href="#projects" class="btn">See My Work</a>
+    </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="projects-section container">
+    <h2>My Projects</h2>
+
+    <!-- 1) Meeting Booking Platform (Full Stack) -->
+    <div class="project-card">
+        <div class="project-video">
+            <!-- Placeholder video embed -->
+            <video
+                    controls
+                    poster="assets/meeting_thumbnail.jpg"
+                    class="video-thumb"
+            >
+                <source src="assets/meeting_demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="project-info">
+            <h3>Meeting Booking Platform</h3>
+            <p>
+                A full-stack web application that allows users to create, book,
+                modify, and cancel meetings. Built with <strong>PHP, SQL,
+                JavaScript, HTML/CSS</strong> and deployed using <strong>XAMPP</strong>.
+                It features a responsive front-end design and a robust back-end for
+                managing meeting data.
+            </p>
+            <!-- Add your real project link here -->
+            <a href="https://github.com/yourusername/meeting-booking" class="btn-link" target="_blank">
+                View Project
+            </a>
+        </div>
+    </div>
+
+    <!-- 2) Reversi AI (MCTS / Alpha-Beta) -->
+    <div class="project-card">
+        <div class="project-video">
+            <video
+                    controls
+                    poster="assets/reversi_thumbnail.jpg"
+                    class="video-thumb"
+            >
+                <source src="assets/reversi_demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="project-info">
+            <h3>Reversi AI</h3>
+            <p>
+                An AI agent that plays the game of Reversi (Othello) using
+                <strong>MCTS</strong> and <strong>Alpha-Beta pruning</strong>.
+                Features a heuristic evaluation function that uses a
+                <em>genetic algorithm</em> to optimize its weights. Includes state
+                memoization to reduce redundant computations.
+            </p>
+            <!-- Add your real project link here -->
+            <a href="https://github.com/yourusername/reversi-ai" class="btn-link" target="_blank">
+                View Project
+            </a>
+        </div>
+    </div>
+
+    <!-- 3) 2D Platformer Game (Unity / C#) -->
+    <div class="project-card">
+        <div class="project-video">
+            <video
+                    controls
+                    poster="assets/game_thumbnail.jpg"
+                    class="video-thumb"
+            >
+                <source src="assets/game_demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="project-info">
+            <h3>2D Platformer Game</h3>
+            <p>
+                A self-taught project to build a 2D platformer using
+                <strong>Unity</strong> and <strong>C#</strong>. Includes character
+                movement, combat, enemies, traps, animation, sound effects, and
+                multiple game states (pause, game over, victory).
+            </p>
+            <!-- Add your real project link here -->
+            <a href="https://github.com/yourusername/2d-platformer" class="btn-link" target="_blank">
+                View Project
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>
+            Interested in collaborating or have any questions? Feel free to reach out!
+        </p>
+        <a href="mailto:lucas.renaudie@mail.mcgill.ca" class="btn">
+            Email Me
+        </a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 Lucas Renaudie — All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Optional JS file -->
+<script src="script.js"></script>
+</body>
+</html>
