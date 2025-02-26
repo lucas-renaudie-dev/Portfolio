@@ -80,7 +80,7 @@ body {
 .btn,
 .btn-link {
     display: inline-block;
-    background-color: #1e90ff;
+    background-color: #1e90ff; /* Default blue */
     color: #fff;
     padding: 0.75rem 1.25rem;
     border-radius: 4px;
@@ -91,7 +91,7 @@ body {
 
 .btn:hover,
 .btn-link:hover {
-    background-color: #006bb3;
+    background-color: #006bb3; /* Darker blue on hover */
 }
 
 /* Projects Section */
@@ -135,6 +135,27 @@ body {
 .project-info p {
     margin-bottom: 1rem;
     line-height: 1.4;
+}
+
+/* NEW: Two-button layout & color overrides */
+.btn-group {
+    display: flex;
+    gap: 1rem;      /* spacing between the two buttons */
+    margin-top: 1rem;
+}
+
+.btn-group .btn-link {
+    flex: 1;       /* each button expands to fill available space */
+    text-align: center;
+}
+
+/* Second button = Green */
+.btn-group .btn-link:nth-child(2) {
+    background-color: #28a745;  /* green */
+}
+
+.btn-group .btn-link:nth-child(2):hover {
+    background-color: #218838;  /* darker green on hover */
 }
 
 /* Contact Section */
