@@ -2,7 +2,8 @@
 
 Welcome to my Git Portfolio!
 
-My name is Lucas Renaudie and I'm a McGill University graduate (B.A. Computer Science Major, Mathematics Minor).
+My name is Lucas Renaudie, I am 21 years old and I have just graduated from McGill University (B.A. Computer Science Major, Mathematics Minor). 
+I speak both English and French completely fluently.
 
 Here, you’ll find a selection of my projects, all inspired by real-world academic and self-taught experiences.
 
