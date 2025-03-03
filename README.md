@@ -15,5 +15,3 @@ You can also take a look at my CV (Resume):
 - [French Version](Lucas_Renaudie_CV_Français.pdf)
 
 For contact, please reach out to me at lucas.renaudie@mail.mcgill.ca
-
-Enjoy! :)
