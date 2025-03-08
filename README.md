@@ -12,4 +12,4 @@ Here, you’ll find a selection of my projects, all inspired by real-world acade
 
 You can also take a look at my CV (Resume):&nbsp; [English Version](Lucas_Renaudie_CV_English.pdf)&nbsp; |&nbsp; [French Version](Lucas_Renaudie_CV_Français.pdf)
 
-For contact, please reach out to me at lucas.renaudie@mail.mcgill.ca
+For contact, feel free to reach out to me at lucas.renaudie@mail.mcgill.ca
