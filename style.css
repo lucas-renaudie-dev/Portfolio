@@ -55,25 +55,48 @@ body {
     color: #1e90ff;
 }
 
-/* Hero Section */
+/* HERO SECTION */
 .hero {
     background: #333;
     color: #fff;
-    text-align: center;
     padding: 3rem 0;
+}
+
+.hero-content {
+    /* Let the container define the width, no text-align center here */
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Brighter link color in hero */
+.hero-content a {
+    color: #63b3ff;  /* Brighter than the default for contrast on dark background */
+    text-decoration: none;
+}
+
+.hero-content a:hover {
+    color: #bee0ff; /* Lighten further on hover */
 }
 
 .hero-content h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    /* Headings left-aligned by default */
 }
 
 .hero-content p {
     font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    /* Paragraphs also left-aligned by default */
+}
+
+.hero-content ul {
     margin-bottom: 2rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 1.5rem; /* Ensure bullets line up nicely */
+    list-style-position: outside;
+    /* Bulleted list is also left-aligned by default */
 }
 
 /* Button Styles */
@@ -137,7 +160,7 @@ body {
     line-height: 1.4;
 }
 
-/* NEW: Two-button layout & color overrides */
+/* Two-button layout & color overrides */
 .btn-group {
     display: flex;
     gap: 1rem;      /* spacing between the two buttons */
