@@ -12,4 +12,7 @@ Here, you’ll find a selection of my projects, all inspired by academic and sel
 
 You can also take a look at my CV (Resume):&nbsp; [English Version](Lucas_Renaudie_CV_English.docx)&nbsp; |&nbsp; [French Version](Lucas_Renaudie_CV_Français.pdf)
 
+<a href="https://raw.githubusercontent.com/lucas-renaudie-dev/Portfolio/Lucas_Renaudie_CV_English.docx" download>Download Document</a>
+
+
 For contact, feel free to reach out to me at lucas.renaudie@mail.mcgill.ca
