@@ -99,6 +99,15 @@ body {
     /* Bulleted list is also left-aligned by default */
 }
 
+.hero-photo {
+    display: block;         /* ensures the image is treated like a block-level element */
+    margin: 0 auto 1.5rem;  /* centers it horizontally, adds space below */
+    border-radius: 50%;     /* circular appearance */
+    max-width: 150px;       /* limit the max width */
+    height: 150px;          /* fix height for a perfect circle */
+    object-fit: cover;      /* ensures the image fills the circle */
+}
+
 /* Button Styles */
 .btn,
 .btn-link {
