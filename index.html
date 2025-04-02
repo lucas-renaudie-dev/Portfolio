@@ -77,7 +77,7 @@
             </video>
         </div>
         <div class="project-info">
-            <h3>Meeting Booking Website</h3>
+            <h3 class="text-center">Meeting Booking Website</h3>
             <p>
                 A full-stack web application that allows users to register and login, as well as create, book,
                 modify, and cancel meetings. Built with <strong>PHP, SQL,
@@ -112,7 +112,7 @@
             </video>
         </div>
         <div class="project-info">
-            <h3>Game-Playing AI</h3>
+            <h3 class="text-center">Game-Playing AI</h3>
             <p>
                 An AI agent that plays the game of Reversi (Othello) using an
                 <strong>Iterative-Deepening Alpha-Beta Pruning</strong> tree search – coded in <strong>Python</strong>.
@@ -150,7 +150,7 @@
             </video>
         </div>
         <div class="project-info">
-            <h3>2D Unity Game</h3>
+            <h3 class="text-center">2D Unity Game</h3>
             <p>
                 A self-taught project to build a 2D platformer using
                 <strong>Unity</strong> and <strong>C#</strong>. Includes character
@@ -171,7 +171,87 @@
             </div>
         </div>
     </div>
+
+    <div class="project-card">
+        <!-- Carousel area (using same video-thumb styling as other cards) -->
+        <div class="project-video">
+            <div class="carousel-container">
+                <!-- Example Thumbnail #4 -->
+                <img
+                        src="assets/Blender/kinder-explosion6.png"
+                        alt="Kinder Explosion"
+                        class="video-thumb carousel-item"
+                        data-full="assets/Blender/kinder-explosion6.png"
+                        data-title="Kinder Explosion"
+                        data-desc="Modelling, texturing and animation of a kinder splitting apart."
+                />
+
+                <!-- Example Thumbnail #1 -->
+                <img
+                        src="assets/Blender/porte.png"
+                        alt="Sci-fi Mechanical Door"
+                        class="video-thumb carousel-item"
+                        data-full="assets/Blender/lucas-anim-porte.mp4"
+                        data-title="Sci-fi Mechanical Door"
+                        data-desc="Rig and animation of a mechanical door."
+                />
+
+                <!-- Example Thumbnail #3 -->
+                <img
+                        src="assets/Blender/living%20room%20snowy.jpg"
+                        alt="Bedroom with Snowy Background"
+                        class="video-thumb carousel-item"
+                        data-full="assets/Blender/living%20room%20snowy.jpg"
+                        data-title="Bedroom with Snowy Background"
+                        data-desc="Environment lighting and window shading of a bedroom."
+                />
+
+                <img
+                        src="assets/Blender/crabe.png"
+                        alt="Crab Texturing"
+                        class="video-thumb carousel-item"
+                        data-full="assets/Blender/crabe.png"
+                        data-title="Crab Texturing"
+                        data-desc="Texturing of a crab using a reference image, via texture paint and UV mapping. Application of a normal map of and bump in the shader editor to add detailed surface depth."
+                />
+
+                <img
+                        src="assets/Blender/mixamo.png"
+                        alt="Mixamo Animation"
+                        class="video-thumb carousel-item"
+                        data-full="assets/Blender/mixamo-anim.mp4"
+                        data-title="Mixamo Animation"
+                        data-desc="Use of the non linear animator to make a smooth animation. Rig and animations imported from Mixamo."
+                />
+            </div>
+        </div>
+
+        <!-- Info area (consistent with other project cards) -->
+        <div class="project-info blender-info">
+            <h3 class="text-center">Blender Projects</h3>
+            <p>
+                A selection of my creations in <b>Blender</b>. Scroll the carousel to the right to see all of my projects, and click any thumbnail to see a larger preview and the description of the project. Once open, you can click the preview image to see it in full screen!
+            </p>
+        </div>
+    </div>
 </section>
+
+
+<!-- MODAL (hidden by default) -->
+<div id="blenderModal" class="modal">
+    <div class="modal-content">
+        <!-- Close button (×) -->
+        <span class="close">&times;</span>
+
+        <!-- Media container: will hold either an image or video -->
+        <div id="blenderMediaContainer"></div>
+
+        <!-- Title and description -->
+        <h3 id="blenderTitle"></h3>
+        <p id="blenderDesc"></p>
+    </div>
+</div>
+
 
 <!-- CONTACT SECTION -->
 <section id="contact" class="contact-section">
@@ -195,5 +275,101 @@
 
 <!-- Optional JS file -->
 <script src="script.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const modal = document.getElementById('blenderModal');
+        const closeBtn = modal.querySelector('.close');
+        const mediaContainer = document.getElementById('blenderMediaContainer');
+        const titleEl = document.getElementById('blenderTitle');
+        const descEl = document.getElementById('blenderDesc');
+
+        // All thumbnail elements
+        const thumbnails = document.querySelectorAll('.carousel-item');
+
+        // Helper function to clear media container
+        function clearMediaContainer() {
+            mediaContainer.innerHTML = '';
+        }
+
+        // Open the modal on thumbnail click
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                const fullSrc = thumb.getAttribute('data-full');
+                const projTitle = thumb.getAttribute('data-title');
+                const projDesc = thumb.getAttribute('data-desc');
+
+                // Clear previous media if any
+                clearMediaContainer();
+
+                // Determine whether to create a video or an image based on the file extension.
+                if (fullSrc.toLowerCase().endsWith('.mp4')) {
+                    // Create a video element
+                    const video = document.createElement('video');
+                    video.src = fullSrc;
+                    video.controls = true;
+                    video.style.width = '100%';  // Adjust as needed
+                    video.style.maxHeight = '500px';  // Adjust max-height if desired
+                    video.style.cursor = 'zoom-in';
+
+                    // Toggle fullscreen on click
+                    video.addEventListener('click', () => {
+                        if (!document.fullscreenElement) {
+                            video.requestFullscreen().catch(err => {
+                                console.error(`Error attempting to enter fullscreen: ${err.message}`);
+                            });
+                        } else {
+                            document.exitFullscreen();
+                        }
+                    });
+
+                    mediaContainer.appendChild(video);
+                } else {
+                    // Otherwise, create an image element
+                    const img = document.createElement('img');
+                    img.src = fullSrc;
+                    img.alt = projTitle;
+                    img.style.width = '100%';
+                    img.style.cursor = 'zoom-in';
+                    // Toggle fullscreen on image click
+                    img.addEventListener('click', () => {
+                        if (!document.fullscreenElement) {
+                            img.requestFullscreen().catch(err => {
+                                console.error(`Error attempting to enter fullscreen: ${err.message}`);
+                            });
+                        } else {
+                            document.exitFullscreen();
+                        }
+                    });
+                    mediaContainer.appendChild(img);
+                }
+
+                // Set title and description
+                titleEl.textContent = projTitle;
+                descEl.textContent = projDesc;
+
+                // Show modal
+                modal.style.display = 'block';
+            });
+        });
+
+        // Close modal when user clicks the "×"
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+            clearMediaContainer();
+        });
+
+        // Also close if user clicks outside the modal-content
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                clearMediaContainer();
+            }
+        });
+    });
+
+
+</script>
+
 </body>
 </html>
