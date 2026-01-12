@@ -11,4 +11,4 @@ Here, you’ll find a selection of my projects, all inspired by academic and sel
 
 You can also take a look at my CV:&nbsp; [English Version](Lucas_Renaudie_CV_English.pdf)&nbsp; |&nbsp; [French Version](Lucas_Renaudie_CV_Français.pdf)
 
-For contact, feel free to reach out to me at lucas.renaudie@mail.mcgill.ca
+For contact, feel free to reach out to me at 2003lucasrenaudie@gmail.com
