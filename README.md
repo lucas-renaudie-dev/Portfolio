@@ -9,6 +9,6 @@ Recently, I have immersed myself in the world of 3D art, computer graphics and g
 
 Here, you’ll find a selection of my projects, all inspired by academic and self-taught experiences.
 
-You can also take a look at my CV:&nbsp; [English Version](Lucas_Renaudie_CV_English.pdf)&nbsp; |&nbsp; [French Version](Lucas_Renaudie_CV_Français.pdf)
+You can also take a look at my CV:&nbsp; [English Resume](Lucas_Renaudie_CV_English.pdf)
 
 For contact, feel free to reach out to me at 2003lucasrenaudie@gmail.com
