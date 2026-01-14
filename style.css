@@ -265,6 +265,23 @@ body {
 }
 
 /* ---------------------------------------
+   MODAL MEDIA FIT (FIX VERTICAL IMAGES)
+--------------------------------------- */
+
+/* Images & videos inside the Blender modal */
+#blenderMediaContainer img,
+#blenderMediaContainer video {
+    max-width: 100%;
+    max-height: 80vh;      /* never exceed viewport height */
+    width: auto;
+    height: auto;
+    object-fit: contain;  /* preserve aspect ratio */
+    margin: 0 auto;
+    display: block;
+}
+
+
+/* ---------------------------------------
    MODAL - BIGGER SIZE
 --------------------------------------- */
 .modal {
@@ -289,6 +306,13 @@ body {
     text-align: center;
     position: relative;
 }
+
+/* Let modal adapt to vertical media width */
+.modal-content {
+    width: fit-content;
+    max-width: 90vw;
+}
+
 
 /* Close button (X) */
 .close {
