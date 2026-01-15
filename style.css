@@ -143,7 +143,7 @@ body {
 
 .project-card {
     background-color: #fff;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-wrap: wrap;
     border-radius: 6px;
@@ -198,6 +198,17 @@ body {
 
 .btn-group .btn-link:nth-child(2):hover {
     background-color: #218838;  /* darker green on hover */
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column; /* stack content vertically */
+    justify-content: flex-start;
+    padding: 1.9rem;
+}
+
+.btn-group {
+    margin-top: auto; /* pushes the buttons to the bottom */
 }
 
 /* Contact Section */
