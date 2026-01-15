@@ -1,4 +1,8 @@
 /* Basic Reset */
+html, body {
+    min-width: 500px; /* choose your cutoff */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -339,7 +343,7 @@ body {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 1000px) {
+@media (max-width: 1014px) {
     .text-center {
         text-align: center;
     }
