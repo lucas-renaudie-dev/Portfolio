@@ -316,6 +316,8 @@ body {
     background-color: #fff;
     margin: 2% auto;         /* center horizontally, 2% from top */
     padding: 1.5rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
     border-radius: 6px;
     width: 80%;              /* larger modal width */
     max-width: 1200px;       /* cap on huge screens */
