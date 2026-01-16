@@ -287,11 +287,12 @@ body {
 #blenderMediaContainer img,
 #blenderMediaContainer video {
     max-width: 100%;
-    max-height: 80vh;      /* never exceed viewport height */
+    max-height: 70vh;      /* never exceed viewport height */
     width: auto;
     height: auto;
     object-fit: contain;  /* preserve aspect ratio */
     margin: 0 auto;
+    margin-top: 20px;
     display: block;
 }
 
