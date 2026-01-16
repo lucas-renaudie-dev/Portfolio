@@ -353,7 +353,21 @@ body {
     height: auto;
     margin-top: 1rem;
     border-radius: 4px;
-    cursor: zoom-in;         /* indicates user can enlarge further */
+}
+
+/* Tooltip for fullscreen hint */
+.fullscreen-hint {
+    position: fixed;
+    pointer-events: none; /* never block clicks */
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    font-size: 11px;
+    padding: 4px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 2000;
+    opacity: 0;
+    transition: opacity 0.15s ease;
 }
 
 /* Responsive Adjustments */

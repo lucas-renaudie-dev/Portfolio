@@ -423,6 +423,84 @@
 <script src="script.js"></script>
 
 <script>
+/* ---------------------------------------
+   Fullscreen hover hint + cursor control
+--------------------------------------- */
+
+(function () {
+    const hint = document.createElement('div');
+    hint.className = 'fullscreen-hint';
+    hint.textContent = 'Click for fullscreen';
+    hint.style.opacity = '0';
+    document.body.appendChild(hint);
+
+    function attach(el) {
+        let active = false;
+
+        el.addEventListener('mouseenter', () => {
+            active = true;
+            hint.style.opacity = '1';
+        });
+
+        el.addEventListener('mouseleave', () => {
+            active = false;
+            hint.style.opacity = '0';
+            el.style.cursor = 'auto'; // reset
+        });
+
+        el.addEventListener('mousemove', (e) => {
+            if (!active) return;
+
+            let show = true;
+
+            if (el.tagName === 'VIDEO' && el.controls) {
+                const rect = el.getBoundingClientRect();
+                const y = e.clientY - rect.top;
+
+                const EXCLUDED_BOTTOM_PX = 80;
+
+                if (y > rect.height - EXCLUDED_BOTTOM_PX) {
+                    show = false;
+                }
+            }
+
+            // Tooltip
+            hint.style.opacity = show ? '1' : '0';
+
+            // Cursor (THIS is the missing piece)
+            el.style.cursor = show ? 'zoom-in' : 'auto';
+
+            if (show) {
+                hint.style.left = e.clientX + 14 + 'px';
+                hint.style.top = e.clientY + 14 + 'px';
+            }
+        });
+    }
+
+    const container = document.getElementById('blenderMediaContainer');
+    if (!container) return;
+
+    const observer = new MutationObserver(() => {
+        const media = container.querySelector('img, video');
+        if (media && !media.dataset.fullscreenAttached) {
+            media.dataset.fullscreenAttached = 'true';
+            attach(media);
+        }
+    });
+
+    observer.observe(container, {
+        childList: true,
+        subtree: true
+    });
+})();
+</script>
+
+
+
+
+
+
+<script>
     document.addEventListener('DOMContentLoaded', function() {
         const modal = document.getElementById('blenderModal');
         const closeBtn = modal.querySelector('.close');
