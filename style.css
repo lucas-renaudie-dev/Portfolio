@@ -272,10 +272,10 @@ body {
 
 /* Thumbnails */
 .carousel-item {
-    /* Retain the second occurrence's value */
     cursor: pointer;
-    min-width: 280px;
-    object-fit: cover;
+    min-width: 240px;     /* slightly narrower */
+    min-height: 380px;        /* make them taller */
+    object-fit: cover;    /* keeps them clean */
     border-radius: 4px;
 }
 
@@ -374,6 +374,7 @@ body {
 @media (max-width: 1014px) {
     .text-center {
         text-align: center;
+        margin-top: -12px;
     }
 
     .project-info {
@@ -389,8 +390,4 @@ body {
     }
 
     /* Scale down media without cropping the images */
-    .project-video video,
-    .project-video .video-thumb {
-        max-height: 260px;
-    }
 }
