@@ -4,7 +4,7 @@ Welcome to my portfolio!
 
 My name is Lucas Renaudie, I am 23 years old, fully fluent in English and French, and currently learning Japanese.
 
-I graduated from McGill University (Montreal) with a Bachelor's in Computer Science and Mathematics, where I built a strong foundation in programming (Python, Java, C#) and in math (algebra, calculus, differential equations, probability, graph theory, logic).
+I graduated from McGill University (Montreal) in 2025 with a Bachelor's in Computer Science and Mathematics, where I built a strong foundation in programming (Python, Java, C#) and in math (algebra, calculus, differential equations, probability, graph theory, logic).
 
 I then spent a year at ATI, Université Paris 8, working on 3D softwares like Maya, Unreal Engine and Unity, with a focus on scripting for tool development and gameplay programming. In parallel, I completed a 150-hour Blender course at Gobelins Paris, and I've continued using Blender for personal projects, especially for environment creation and renders. 
 
