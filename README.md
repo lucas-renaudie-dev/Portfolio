@@ -12,8 +12,8 @@ Last year, I pursued further studies at ATI Université Paris 8, focusing on 3D 
 
 In parallel, I completed a 150-hour Blender course at Les Gobelins (Paris), which I continue to use for personal projects, especially for environment creation and renders. 
 
-This upcoming September, I will be joining l'Ecole Polytechnique to pursue a Master of Science and Technology (EXcin track). 
-I will be learning the fundamentals of computer graphics, machine learning and generative AI, computer vision, real-time 3D engine programming (Unreal Engine), rendering (OpenGL, Vulkan), and more. I will also be covering topics related to cinema, such as pipeline and tool development, applied AI, camera technology, film production, cinema theory and more.
+This year, since September, I have started my Master of Science and Technology at l'Ecole Polytechnique (EXcin track). 
+I will be learning the fundamentals of computer graphics and animation (OpenGL), machine learning and generative AI, real-time 3D programming (Unreal Engine), and computer vision. I will also be covering topics related to cinema, such as pipeline and tool development, camera technology and optics, color science, film production and cinematography.
 
 Here, you’ll find a selection of my projects, including both academic and independent work.
 
