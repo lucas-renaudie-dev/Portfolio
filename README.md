@@ -1,6 +1,6 @@
 # Portfolio
 
-Welcome to my Git Portfolio!
+Welcome to my Portfolio!
 
 My name is Lucas Renaudie, I am 23 years old, fully fluent in English and French, and currently learning Japanese.
 
