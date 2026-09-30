@@ -17,6 +17,6 @@ I will be learning the fundamentals of computer graphics and animation (OpenGL),
 
 Here, you’ll find a selection of my projects, including both academic and independent work.
 
-You can also take a look at my CV:&nbsp; [English Resume](Lucas_Renaudie_CV.pdf)
+You can also take a look at my resume:&nbsp; [English CV](Lucas_Renaudie_CV.pdf)
 
 For contact, feel free to reach out to me at 2003lucasrenaudie@gmail.com
