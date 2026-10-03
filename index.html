@@ -156,7 +156,10 @@
     <div class="project-card">
         <!-- Carousel area (using same video-thumb styling as other cards) -->
         <div class="project-video">
-            <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <button class="carousel-arrow left" aria-label="Scroll left">&#10094;</button>
+
+                <div class="carousel-container">
                 <img
                         src="assets/Blender Projects/blade-runner11.png"
                         alt="Cyberpunk City"
@@ -279,6 +282,9 @@
                         Texture painting a reference image onto the crab, using a brush with stencil texture mapping.
                         Application of a bump in the shader editor to add detailed surface depth."
                 />
+                </div>
+                
+                <button class="carousel-arrow right" aria-label="Scroll right">&#10095;</button>
             </div>
         </div>
 
@@ -721,8 +727,34 @@
             }
         });
     });
+</script>
 
+<script>
+    document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
+        const track = wrapper.querySelector('.carousel-container');
+        const leftBtn = wrapper.querySelector('.carousel-arrow.left');
+        const rightBtn = wrapper.querySelector('.carousel-arrow.right');
 
+        function update() {
+            const max = track.scrollWidth - track.clientWidth;
+            const canLeft = track.scrollLeft > 2;          // small tolerance for fractional px
+            const canRight = track.scrollLeft < max - 2;
+
+            leftBtn.classList.toggle('visible', canLeft);
+            rightBtn.classList.toggle('visible', canRight);
+            wrapper.classList.toggle('can-left', canLeft);
+            wrapper.classList.toggle('can-right', canRight);
+        }
+
+        const step = () => track.clientWidth * 0.8;        // scroll ~80% of the visible width
+        leftBtn.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
+        rightBtn.addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
+
+        track.addEventListener('scroll', update, { passive: true });
+        window.addEventListener('resize', update);
+        window.addEventListener('load', update);           // images change scrollWidth once loaded
+        update();
+    });
 </script>
 
 </body>
