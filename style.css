@@ -333,7 +333,7 @@ body {
 .carousel-wrapper::before {
     left: 0;
     background: linear-gradient(to right,
-        rgba(255, 255, 255, 1)  0%,
+        rgba(255, 255, 255, 0.95)  0%,
         rgba(255, 255, 255, 0.70)  14.3%,
         rgba(255, 255, 255, 0.48)  28.6%,
         rgba(255, 255, 255, 0.31)  42.9%,
@@ -345,7 +345,7 @@ body {
 .carousel-wrapper::after {
     right: 0;
     background: linear-gradient(to left,
-        rgba(255, 255, 255, 1)  0%,
+        rgba(255, 255, 255, 0.95)  0%,
         rgba(255, 255, 255, 0.70)  14.3%,
         rgba(255, 255, 255, 0.48)  28.6%,
         rgba(255, 255, 255, 0.31)  42.9%,
