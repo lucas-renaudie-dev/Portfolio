@@ -168,6 +168,10 @@ body {
 .project-video .video-thumb {
     max-height: 260px;
 }
+/* Keep static thumbnails (e.g. Unreal "coming soon") from stretching */
+.project-video img.video-thumb:not(.carousel-item) {
+    object-fit: contain;
+}
 
 .project-info h3 {
     margin-bottom: 1rem;

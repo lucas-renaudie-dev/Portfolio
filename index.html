@@ -161,6 +161,17 @@
 
                 <div class="carousel-container">
                 <img
+                        src="assets/Blender Projects/swamp22.PNG"
+                        alt="Cyber Swamp"
+                        class="video-thumb carousel-item"
+                        data-full="assets/Blender Projects/swamp22.PNG"
+                        data-title="Cyber Swamp"
+                        data-desc="Entire scene made by myself.<br> 
+                        Modelling and texturing of buildings using geometry nodes.<br>
+                        Animation of canoe on water to create ripples."
+                />
+
+                <img
                         src="assets/Blender Projects/New/red-blue11-cropped.png"
                         alt="Neon City"
                         class="video-thumb carousel-item"
@@ -170,17 +181,6 @@
                         Entire scene made by myself. Modelling and texturing of buildings and bridges.<br> 
                         Texturing of emissive windows and neon holographic signs using image textures.<br> 
                         Complex compositor setup to add glare to the emissive textures.<br>"
-                />
-
-                <img
-                        src="assets/Blender Projects/swamp22.PNG"
-                        alt="Cyber Swamp"
-                        class="video-thumb carousel-item"
-                        data-full="assets/Blender Projects/swamp22.PNG"
-                        data-title="Cyber Swamp"
-                        data-desc="Entire scene made by myself.<br> 
-                        Modelling and texturing of buildings using geometry nodes.<br>
-                        Animation of canoe on water to create ripples."
                 />
 
                 <img
@@ -204,16 +204,6 @@
                 />
 
                 <img
-                        src="assets/Blender Projects/New/juche11.png"
-                        alt="Seoul-inspired City at Dusk"
-                        class="video-thumb carousel-item"
-                        data-full="assets/Blender Projects/New/juche11.png"
-                        data-title="Seoul-inspired City at Dusk"
-                        data-desc="Modeling and texturing of all assets (buildings imported). <br>
-                        Layout of scene and lighting.<br>"
-                />
-
-                <img
                         src="assets/Blender Projects/retro18.jpeg"
                         alt="Car in Retro City"
                         class="video-thumb carousel-item"
@@ -233,6 +223,16 @@
                         data-desc="Entire scene made by myself.<br> 
                         Modelling and texturing of all assets, scene layout, lighting."
                 />
+
+                <img
+                        src="assets/Blender Projects/New/juche11.png"
+                        alt="Seoul-inspired City at Dusk"
+                        class="video-thumb carousel-item"
+                        data-full="assets/Blender Projects/New/juche11.png"
+                        data-title="Seoul-inspired City at Dusk"
+                        data-desc="Modeling and texturing of all assets (buildings imported). <br>
+                        Layout of scene and lighting.<br>"
+                />       
 
                 <img
                         src="assets/Blender Projects/New/geonode-waves.png"
@@ -338,7 +338,45 @@
         </div>
     </div>
 
-    <!-- 4) 2D Platformer Game (Unity / C#) -->
+    <!-- 4) Reversi AI (MCTS / Alpha-Beta) -->
+    <div class="project-card">
+        <div class="project-video">
+            <video
+                    controls
+                    poster="assets/McGill AI Project/reversi_thumbnail.jpg"
+                    class="video-thumb"
+            >
+                <source src="assets/McGill AI Project/reversi_demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="project-info">
+            <h3 class="text-center">Game-Playing AI</h3>
+            <p>
+                An AI agent that plays the game of Reversi (Othello) using
+                <strong>Iterative-Deepening Alpha-Beta Pruning</strong>, coded in <strong>Python</strong>.
+                Features an evaluation function, based on a weighted sum of heuristic values. 
+                Implementation of a genetic algorithm to optimize the weights. 
+                Usage of pre-move ordering for maximal pruning.
+                Usage of a depth-aware transposition table for state memoization, to avoid redundant computations.
+                Placed 7th out of 150 in the tournament, with 99%+ win rate against real human players!
+            </p>
+            <div class="btn-group">
+                <!-- First (blue) button -->
+                <a href="https://github.com/lucas-renaudie-dev/Reversi-AI"
+                   class="btn-link" target="_blank">
+                    View Project
+                </a>
+                <!-- Second (green) button -->
+                <a href="https://github.com/lucas-renaudie-dev/Reversi-AI/blob/main/COMP424_Final_Project_Report.pdf"
+                   class="btn-link" target="_blank">
+                    View Report
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5) 2D Platformer Game (Unity / C#) -->
     <div class="project-card">
         <div class="project-video">
             <video
@@ -372,7 +410,7 @@
         </div>
     </div>
 
-    <!-- 5) Unreal Horror Game -->
+    <!-- 6) Unreal Horror Game -->
     <div class="project-card">
         <div class="project-video">
             <img 
@@ -416,7 +454,7 @@
         </div>
     </div>
 
-    <!-- 6) Arena Brawler (Unity / C#) -->
+    <!-- 7) Arena Brawler (Unity / C#) -->
     <div class="project-card">
         <div class="project-video">
             <video
@@ -451,7 +489,7 @@
         </div>
     </div>
 
-    <!-- 7) Maya Bus -->
+    <!-- 8) Maya Bus -->
     <div class="project-card">
         <div class="project-video">
             <video
@@ -480,44 +518,6 @@
                 <a href="https://github.com/lucas-renaudie-dev/Volkswagen-Bus/blob/main/Lucas_RENAUDIE_Partiel_Mode.mb"
                    class="btn-link" target="_blank">
                     Download Model
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- 8) Reversi AI (MCTS / Alpha-Beta) -->
-    <div class="project-card">
-        <div class="project-video">
-            <video
-                    controls
-                    poster="assets/McGill AI Project/reversi_thumbnail.jpg"
-                    class="video-thumb"
-            >
-                <source src="assets/McGill AI Project/reversi_demo.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="project-info">
-            <h3 class="text-center">Game-Playing AI</h3>
-            <p>
-                An AI agent that plays the game of Reversi (Othello) using
-                <strong>Iterative-Deepening Alpha-Beta Pruning</strong>, coded in <strong>Python</strong>.
-                Features an evaluation function, based on a weighted sum of heuristic values. 
-                Implementation of a genetic algorithm to optimize the weights. 
-                Usage of pre-move ordering for maximal pruning.
-                Usage of a depth-aware transposition table for state memoization, to avoid redundant computations.
-                Placed 7th out of 150 in the tournament, with 99%+ win rate against real human players!
-            </p>
-            <div class="btn-group">
-                <!-- First (blue) button -->
-                <a href="https://github.com/lucas-renaudie-dev/Reversi-AI"
-                   class="btn-link" target="_blank">
-                    View Project
-                </a>
-                <!-- Second (green) button -->
-                <a href="https://github.com/lucas-renaudie-dev/Reversi-AI/blob/main/COMP424_Final_Project_Report.pdf"
-                   class="btn-link" target="_blank">
-                    View Report
                 </a>
             </div>
         </div>
