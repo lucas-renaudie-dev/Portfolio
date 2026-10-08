@@ -153,10 +153,15 @@ body {
 .project-video,
 .project-info {
     flex: 1 0 300px;
-    min-width: 450px;
+    min-width: 0;
     padding: 1.5rem;
 }
 
+.project-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .video-thumb {
     width: 100%;
@@ -470,7 +475,7 @@ body {
 
     .project-video,
     .project-info {
-        width: 100%;
+        flex-basis: 100%;   /* forces the vertical layout here, and only here */
     }
 
     /* Scale down media without cropping the images */
